@@ -24,7 +24,7 @@ class FilmRepository {
     }
 
     fun getFilmById(filmId: Long):FilmList {
-        return filmData.first() {
+        return filmData.first {
             it.film.id == filmId
         }
     }

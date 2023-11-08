@@ -39,9 +39,6 @@ fun FilmContent(
         modifier = modifier
             .shadow(DefaultShadowColor.alpha.dp)
             .fillMaxWidth()
-            .clickable {
-
-        }
     ) {
         AsyncImage(
             model = image,
@@ -65,7 +62,8 @@ fun FilmContent(
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
                 fontWeight = FontWeight.Medium,
-                fontSize = 28.sp
+                fontSize = 28.sp,
+                color = MaterialTheme.colorScheme.primary
             )
 
             Text(

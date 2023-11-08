@@ -90,15 +90,6 @@ fun DetailContent(
                         .fillMaxWidth()
                         .clip(RoundedCornerShape(bottomStart = 20.dp, bottomEnd = 20.dp))
                 )
-//                AsyncImage(
-//                    model = image,
-//                    contentDescription = null,
-//                    contentScale = ContentScale.Crop,
-//                    modifier = modifier
-//                        .height(400.dp)
-//                        .fillMaxWidth()
-//                        .clip(RoundedCornerShape(bottomStart = 20.dp, bottomEnd = 20.dp))
-//                )
                 Icon(
                     imageVector =Icons.Default.ArrowBack,
                     contentDescription = "back",
@@ -116,7 +107,8 @@ fun DetailContent(
                     textAlign = TextAlign.Start,
                     style = MaterialTheme.typography.headlineSmall.copy(
                         fontWeight = FontWeight.Bold
-                    )
+                    ),
+                    color = MaterialTheme.colorScheme.primary
                 )
                 Text(
                     text = description,
